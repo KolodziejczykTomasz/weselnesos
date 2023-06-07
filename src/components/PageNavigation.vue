@@ -1,16 +1,11 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
 <nav>
   <ul>
     <li><router-link to="/" >Aktualności</router-link></li>
     <li><router-link  to="/">Przygotowania </router-link></li>
-    <li><router-link to="/psalms" >Psalmy</router-link></li>
+    <li><router-link to="/psalmy" >Psalmy</router-link></li>
     <li><router-link  to="/">Dodatki</router-link></li></ul>
 </nav>
-<router-view/>
 </template>
 <style scoped>
 nav {

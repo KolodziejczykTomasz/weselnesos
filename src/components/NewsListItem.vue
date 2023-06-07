@@ -2,7 +2,7 @@
   <div class="item">
    
     <div class="details">
-     
+     New List item
     </div>
   </div>
 </template>

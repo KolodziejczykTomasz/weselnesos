@@ -1,20 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from "../views/HomeView.vue";
-import PsalmsView from '../views/PsalmsView.vue';
+
+import HomeView from '@/views/HomeView.vue';
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/psalmy',
-      name: 'psalms',
-      component: PsalmsView
-    }        
+    { path: '/', name: 'HomeView',component: HomeView },
+    { path: '/psalmy', name: 'PsalmsView', component: () => import('@/views/PsalmsView.vue'),}        
   ]
 })
 

@@ -1,19 +1,17 @@
 <script setup lang="ts">
 import NewsList from '../components/NewsList.vue'
-import PageNavigation from '../components/PageNavigation.vue'
+
 </script>
 
 <template> 
   <div class="wrapper">
-    <aside>
-      <PageNavigation/>
-    </aside>
+
     <main>
-      <NewsList />
-      <router-view />
+      <NewsList /> 
+      <NewsList /> 
+      <NewsList /> 
     </main>
   </div> 
-  <router-view />
 </template>
 <style scoped>
 .wrapper {
@@ -26,12 +24,6 @@ import PageNavigation from '../components/PageNavigation.vue'
   border: 3px solid green;
 }
 
-aside{
-  display: flex;
-  height: 100%;
-  border: 1px solid red;
-  width: 20%;
-}
 
 main {
   display: flex;
