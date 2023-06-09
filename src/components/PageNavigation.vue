@@ -17,14 +17,15 @@
     
     <div class="aside-navigation">
       <nav>
-        <ul>       
-          <li><router-link to="/">Przygotowania </router-link></li>
-          <li><router-link to="/psalmy" >Psalmy</router-link></li>  
+        <ul>
+          <li><router-link to="/church" >Kościół</router-link></li>  
         </ul>     
       </nav>
     </div>
     <div class="aside-footer">
-      <p>Copyright &copy; weselne.sos.pl</p>
+      <p>&copy; weselne.sos.pl</p>
+      <p>Wszelkie prawa zastrzeżone</p>
+      <p>Regulamin strony</p>
     </div>
   </div>
 
@@ -33,7 +34,8 @@
 .aside-wrapper {
   display: grid;
   grid-template-rows: 200px 1fr 2fr 200px;
-  height: 100%;
+  min-height: 100%;
+  height: auto;
   width: 100%;
   border-right: 1px solid #553898;
 }
@@ -112,10 +114,15 @@ nav ul li a:hover{
 }
 .aside-footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   font-size: 16px;
   color: #8a8a8a;
+}
+
+.aside-footer p {
+  margin-bottom: -5px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -132,7 +139,7 @@ nav ul li a:hover{
 }
 .aside-wrapper {
   display: grid;
-  grid-template-rows: 200px 200px 200px;
+  grid-template-rows: 200px auto auto;
 
 }
 }
