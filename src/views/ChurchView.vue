@@ -5,7 +5,7 @@
         <div class="church-item"><router-link to="/church/firstReading">I Czytanie</router-link></div>
         <div class="church-item"><router-link to="/church/secondReading">II Czytanie</router-link></div>
         <div class="church-item"><router-link to="/church/psalms">Psalm</router-link></div>
-        <div class="church-item"><router-link to="/">Muzyka</router-link></div>
+        <div class="church-item"><router-link to="/church/music">Muzyka</router-link></div>
     </div>
 </template>
 <style scoped>

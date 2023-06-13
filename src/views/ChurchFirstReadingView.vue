@@ -42,6 +42,9 @@ const items: object | any = firstReading
     padding: 5px 5px;
 }
 
+.church-item p {
+    width: 100%;
+}
 .church-item:hover {
     box-shadow: 0 0 4px #553898;
     color:#2e170f;

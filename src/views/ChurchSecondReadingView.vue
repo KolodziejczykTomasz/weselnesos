@@ -46,4 +46,8 @@ const items: object | any = secondReading
     box-shadow: 0 0 4px #553898;
     color:#2e170f;
 }
+
+.church-item p {
+    width: 100%;
+}
 </style>

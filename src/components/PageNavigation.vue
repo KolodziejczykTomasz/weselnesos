@@ -3,9 +3,9 @@
 </script>
 <template>
   <div class="aside-wrapper">
-    <div class="aside-brand">
+   <router-link to="/"> <div class="aside-brand">
       <img src='../assets/images/page-element/brand.png' alt="brand logo"/>
-    </div>
+    </div></router-link>
     <div class="aside-header">
       <p class="aside-header-title">weselne.sos.pl</p>
       <p class="aside-header-icons">
@@ -140,7 +140,8 @@ nav ul li a:hover{
 .aside-wrapper {
   display: grid;
   grid-template-rows: 200px auto auto;
-
+  border-left: 1px solid #553898;
+  border-right: 1px solid #553898;
 }
 }
 </style>

@@ -29,7 +29,7 @@ const items: object | any = psalms
     width: 100%;
     min-height: 250px;
     height: auto;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 20px;
     font-weight: bold;
@@ -45,5 +45,9 @@ const items: object | any = psalms
 .church-item:hover {
     box-shadow: 0 0 4px #553898;
     color:#2e170f;
+}
+
+.church-item p {
+    width: 100%;
 }
 </style>
