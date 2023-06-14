@@ -1,11 +1,11 @@
 
 <template>
     <div class="church-section">
-        <div class="church-item"><router-link to="/church/gospels">Ewangelia</router-link></div>
-        <div class="church-item"><router-link to="/church/firstReading">I Czytanie</router-link></div>
-        <div class="church-item"><router-link to="/church/secondReading">II Czytanie</router-link></div>
-        <div class="church-item"><router-link to="/church/psalms">Psalm</router-link></div>
-        <div class="church-item"><router-link to="/church/music">Muzyka</router-link></div>
+        <router-link to="/church/gospels"><div class="church-item">Ewangelia</div></router-link>
+        <router-link to="/church/firstReading"><div class="church-item">I Czytanie</div></router-link>
+        <router-link to="/church/secondReading"><div class="church-item">II Czytanie</div></router-link>
+        <router-link to="/church/psalms"><div class="church-item">Psalm</div></router-link>
+        <router-link to="/church/music"><div class="church-item">Muzyka</div></router-link>
     </div>
 </template>
 <style scoped>
@@ -19,7 +19,10 @@
     width: 100%;
     padding: 100px;
 }
-
+.church-section a {
+    text-decoration: none;
+    color: #553898;
+}
 
 .church-item {
     display: flex;
@@ -28,15 +31,15 @@
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-weight: bold;
     box-shadow: 0 0 2px #b09aee;
     margin:10px;
-    transition: .2s;
-    color: #8a8a8a;
+    transition: .2s;  
 }
 
 .church-item:hover {
     box-shadow: 0 0 4px #553898;
     color:#2e170f;
 }
+
+
 </style>

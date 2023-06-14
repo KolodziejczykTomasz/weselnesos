@@ -5,7 +5,20 @@ const items: object | any = secondReading
 
 <template>
     <div class="church-section">
-        <div class="church-item" v-for="item in items" :key="item.id"> {{ item.slug }}<p style="white-space: pre-line;">{{ (item.content) }}</p></div>    
+        <div class="church-item" v-for="item in items" :key="item.id"> 
+            <div class="container">
+                <div class="title">
+                    {{ item.slug }}
+                </div>
+                <div class="subtitle">
+                    {{ item.title }}
+                </div>
+                <div class="content" style="white-space: pre-line;">
+                    {{ item.content }}                
+                </div>
+            </div>
+            
+        </div>    
     </div>
 </template>
 
@@ -39,15 +52,29 @@ const items: object | any = secondReading
     color: #8a8a8a;
     text-align: left;
     margin: 20px 0;
-    padding: 5px 5px;
+    padding: 5px 0;
 }
 
-.church-item:hover {
-    box-shadow: 0 0 4px #553898;
-    color:#2e170f;
-}
-
-.church-item p {
+.church-item {
     width: 100%;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 24px; 
+    padding: 20px 5px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 22px; 
+    padding-bottom: 30px;
+}
+
+.content {
+   margin-bottom: 30px;
 }
 </style>
