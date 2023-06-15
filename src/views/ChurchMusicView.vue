@@ -38,7 +38,11 @@ Należy pamiętać, że wszelkie prawa do utworów należą do autorów tekstu.<
     padding: 100px;
 }
 
-
+@media only screen and (max-width: 1020px) {
+    .church-section {
+        padding: 20px;
+    }
+}
 .church-item {
     display: flex;
     flex-direction: column;

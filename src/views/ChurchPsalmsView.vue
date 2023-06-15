@@ -54,7 +54,11 @@ const items: object | any = psalms
     margin: 20px 0;
     padding: 5px 0;
 }
-
+@media only screen and (max-width: 1020px) {
+    .church-section {
+        padding: 20px;
+    }
+}
 .church-item {
     width: 100%;
 }

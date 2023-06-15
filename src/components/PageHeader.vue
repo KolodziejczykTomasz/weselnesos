@@ -7,8 +7,8 @@ import PageNavigation from './PageNavigation.vue';
   <div class="wrapper">
 
    <div class="brand">
-    <router-link to="/"> 
-      <div >
+    <router-link to="/church"> 
+      <div>
         <img src='../assets/images/page-element/brand.png' alt="brand logo"/>
         
       </div>
@@ -21,11 +21,12 @@ import PageNavigation from './PageNavigation.vue';
 
 
     <div class="social">
-      <p class="brand-title">weselne.sos.pl</p>     
-      <p class="social-icons">
+      
+      <div class="social-icons">
         <span class="icon"><a target="_blank" href="https://www.facebook.com/sosweselne"><i class="bi bi-facebook"></i></a></span>
         <span class="icon "><a target="_blank" href="mailto:'redakcja.weselne.sos@gmail.com'"><i class="bi bi-envelope"></i></a></span>
-      </p>
+      </div>
+      <div class="brand-title">weselne.sos.pl</div>     
     </div>       
     
     </div>
@@ -35,17 +36,20 @@ import PageNavigation from './PageNavigation.vue';
 .wrapper {
   display: grid;
   grid-template-columns: 300px 1fr 300px;
-  min-height: 250px;
+  min-height: 150px;
   height: auto;
   width: 100%;
   border-bottom: 1px solid #553898;
-}
 
-@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 800px) {
   .wrapper {
     display: grid;
     grid-template-columns: 1fr;
   }
+  .brand-title { 
+    margin-bottom: 20px;
+}
 }
 .brand {
   display: flex;
@@ -54,8 +58,17 @@ import PageNavigation from './PageNavigation.vue';
 }
 
 .brand-title {
+  display: flex;
+  align-items: center;
   color:#2e170f;
-  font-size: 22px;
+  font-size: 22px; 
+  height: 20%;
+}
+
+.social-icons {
+  display: flex;
+  align-items: flex-end;
+  height: 80%;
 }
 
 .social {
@@ -68,13 +81,15 @@ import PageNavigation from './PageNavigation.vue';
 .icon a {
   margin: 0 5px;
   color: #2e170f;
+  transition: .2s; 
 }
 
 .icon a:hover {
   color:#553898;
 }
-.bi-facebook {
-  font-size: 19px;
+.icon {
+  font-size: 32px;
+  margin-right: 15px;
 }
 
 

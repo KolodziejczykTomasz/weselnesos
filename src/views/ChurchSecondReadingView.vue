@@ -16,8 +16,7 @@ const items: object | any = secondReading
                 <div class="content" style="white-space: pre-line;">
                     {{ item.content }}                
                 </div>
-            </div>
-            
+            </div>            
         </div>    
     </div>
 </template>
@@ -33,7 +32,11 @@ const items: object | any = secondReading
     width: 100%;
     padding: 100px;
 }
-
+@media only screen and (max-width: 1020px) {
+    .church-section {
+        padding: 20px;
+    }
+}
 
 .church-item {
     display: flex;
