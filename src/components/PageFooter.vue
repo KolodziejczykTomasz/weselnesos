@@ -4,9 +4,8 @@
 <template>
  
     <div class="page-footer">
-      <p>&copy; weselne.sos.pl</p>
-      <p>Wszelkie prawa zastrzeżone</p>
-      <p>Regulamin strony</p>
+      <p>Copyright © 2023 - weselne.sos.pl - All Rights Reserved.</p>    
+      <router-link to="/cookies"> <p>Polityka prywatności</p></router-link>
     </div>
 
 
@@ -29,4 +28,13 @@
   margin-bottom: -5px;
 }
 
+.page-footer a {  
+  list-style: none;
+  text-decoration: none;
+  color:#553898;
+}
+
+.page-footer a:hover {
+  color: #b09aee;
+} 
 </style>
