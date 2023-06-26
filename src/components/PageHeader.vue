@@ -5,14 +5,17 @@ import PageNavigation from './PageNavigation.vue';
 </script>
 <template>
   <div class="wrapper">
-
    <div class="brand">
     <router-link to="/church"> 
       <div>
         <img src='../assets/images/page-element/brand.png' alt="brand logo" class="brandImage"/>
-        
+       
       </div>
-    </router-link>
+    </router-link> 
+    <div>
+       <p>Poradnik Pary Młodej</p>
+    </div>
+   
    </div>
     
     <div class="navigation">
@@ -55,6 +58,7 @@ import PageNavigation from './PageNavigation.vue';
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .brand-title {
@@ -68,6 +72,13 @@ import PageNavigation from './PageNavigation.vue';
 .brandImage {
   display: block;
   height: 140px;
+  padding-top: 10px;
+}
+
+.brand div p {
+  font-size: 18px;
+  color:#553898;
+  font-weight: 600;
 }
 .social-icons {
   display: flex;

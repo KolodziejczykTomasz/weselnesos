@@ -10,9 +10,9 @@ const router = createRouter({
     { path: '/church/psalms', name: 'ChurchPsalmsView', component: () => import('@/views/ChurchPsalmsView.vue'),},
     { path: '/church/gospels', name: 'ChurchGospelsView', component: () => import('@/views/ChurchGospelsView.vue'),},
     { path: '/church/psalms', name: 'PsalmsView', component: () => import('@/views/ChurchPsalmsView.vue'),},    
-    { path: '/church/music', name: 'ChurchMusicView', component: () => import('@/views/ChurchMusicView.vue'),}
-    ,    
-    { path: '/cookies', name: 'CookiesView', component: () => import('@/views/CookiesView.vue'),}          
+    { path: '/church/music', name: 'ChurchMusicView', component: () => import('@/views/ChurchMusicView.vue'),},    
+    { path: '/cookies', name: 'CookiesView', component: () => import('@/views/CookiesView.vue'),},
+    { path: '/contact', name: 'ContactView', component: () => import('@/views/ContactView.vue'),}              
   ]
 })
 

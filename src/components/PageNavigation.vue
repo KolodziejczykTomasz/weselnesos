@@ -7,6 +7,7 @@
       <nav>
         <ul>
           <li><router-link to="/church" >Kościół</router-link></li>  
+          <li><router-link to="/contact" >Kontakt</router-link></li>  
         </ul>     
       </nav>
     </div> 
@@ -30,17 +31,21 @@ nav {
 }
 
 nav ul {  
+  display: flex;
   list-style: none;
   text-decoration: none;
+  flex-direction: row;
 }
 
 nav ul li {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  margin-right: 5px;
   border: 2px solid #553898;
   border-radius: 20px;
-  width: 200px;
+  width: 150px;
+  font-size: 18px;
   
 }
 
