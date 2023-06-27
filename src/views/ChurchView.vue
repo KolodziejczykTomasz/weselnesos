@@ -1,4 +1,3 @@
-
 <template>
     <div class="church-section">
         <router-link to="/church/gospels"><div class="church-item">Ewangelia</div></router-link>

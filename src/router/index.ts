@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
-    { path: '/', redirect: '/church' },
+    { path: '/', component: HomeView },
     { path: '/church', name: 'ChurchView', component: () => import('@/views/ChurchView.vue'),},
     { path: '/church/firstReading', name: 'ChurchFirstReadingView', component: () => import('@/views/ChurchFirstReadingView.vue'),},
     { path: '/church/secondReading', name: 'ChurchSecondReadingView', component: () => import('@/views/ChurchSecondReadingView.vue'),},

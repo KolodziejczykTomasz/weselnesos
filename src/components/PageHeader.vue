@@ -6,7 +6,7 @@ import PageNavigation from './PageNavigation.vue';
 <template>
   <div class="wrapper">
    <div class="brand">
-    <router-link to="/church"> 
+    <router-link to="/"> 
       <div>
         <img src='../assets/images/page-element/brand.png' alt="brand logo" class="brandImage"/>
        
