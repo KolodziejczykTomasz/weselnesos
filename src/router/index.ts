@@ -12,6 +12,7 @@ const router = createRouter({
     { path: '/church/gospels', name: 'ChurchGospelsView', component: () => import('@/views/ChurchGospelsView.vue'),},
     { path: '/church/psalms', name: 'PsalmsView', component: () => import('@/views/ChurchPsalmsView.vue'),},    
     { path: '/church/music', name: 'ChurchMusicView', component: () => import('@/views/ChurchMusicView.vue'),},    
+    { path: '/church/confession', name: 'ChurchConfessionView', component: () => import('@/views/ChurchConfessionView.vue'),},  
     { path: '/firstdance', name: 'FirstDanceList', component: () => import('@/views/FirstDanceList.vue'),},
     { path: '/cookies', name: 'CookiesView', component: () => import('@/views/CookiesView.vue'),},
     { path: '/contact', name: 'ContactView', component: () => import('@/views/ContactView.vue'),}              

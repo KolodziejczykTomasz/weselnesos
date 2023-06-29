@@ -5,6 +5,7 @@
         <router-link to="/church/secondReading"><div class="church-item">II Czytanie</div></router-link>
         <router-link to="/church/psalms"><div class="church-item">Psalm</div></router-link>
         <router-link to="/church/music"><div class="church-item">Muzyka</div></router-link>
+        <router-link to="/church/confession"><div class="church-item">Spowiedź</div></router-link>
     </div>
 </template>
 <style scoped>

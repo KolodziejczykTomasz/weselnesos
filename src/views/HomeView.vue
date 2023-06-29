@@ -1,6 +1,7 @@
 <template>
   <div class="section">
       <router-link to="/church"><div class="item">Uroczystość</div></router-link>
+      <router-link to="/firstdance"><div class="item">Pierwszy taniec</div></router-link>
   </div>
 </template>
 <style scoped>
