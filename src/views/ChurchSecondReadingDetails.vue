@@ -1,25 +1,23 @@
-<script setup lang = "ts">
+<script setup lang="ts">
 
-import secondReading from '@/data/secondReading.js'
+import { reactive } from 'vue';
+import secondReading from '@/data/secondReading.js';
 
-import { computed, ref } from 'vue';
+interface Props {
+  id: Number  
+  items: Object
+   
+};
 
- defineProps({
-  id: {
-    required: true,
-    type: Number
-  },
-   props: {
-    type: Object,
-    required: true,
-  },
-})
- 
+const props = defineProps<Props>()
 
 
-const items = ref(secondReading);
+const idProps = reactive(props.id); 
+const items = secondReading;
 
 
+
+const filterItem = items.filter((item: any) => item.id == idProps)
 
 </script>
 
@@ -27,8 +25,10 @@ const items = ref(secondReading);
 <template>
     <div class="section">
         <div class="item"> 
-            <div class="container">
-                {{ items }} {{ id }}   {{ filterItem }}    
+            <div class="container"  >
+                <div>{{ filterItem[0].slug }} </div>
+                <div>{{ filterItem[0].content }} </div>
+                <div>{{ filterItem[0].title }}</div>
                 
             </div>            
         </div>    
@@ -63,7 +63,6 @@ const items = ref(secondReading);
     align-items: center;
     font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 0 2px #b09aee;
     margin:10px;
     transition: .2s;
     color: #8a8a8a;
