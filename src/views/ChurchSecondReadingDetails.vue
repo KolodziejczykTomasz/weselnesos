@@ -1,23 +1,21 @@
 <script setup lang="ts">
-
 import { reactive } from 'vue';
 import secondReading from '@/data/secondReading.js';
 
 interface Props {
-  id: Number  
-  items: Object
-   
+  id: Number
+  slug: String
+  content: String
+  title: String
+  
 };
 
+
 const props = defineProps<Props>()
-
-
 const idProps = reactive(props.id); 
-const items = secondReading;
-
-
-
-const filterItem = items.filter((item: any) => item.id == idProps)
+let items = secondReading;
+let data:any = items;
+const filterItem = data.filter((item: String | any) => item.id == idProps)
 
 </script>
 
@@ -28,7 +26,7 @@ const filterItem = items.filter((item: any) => item.id == idProps)
             <div class="container"  >
                 <div>{{ filterItem[0].slug }} </div>
                 <div>{{ filterItem[0].content }} </div>
-                <div>{{ filterItem[0].title }}</div>
+                <div>{{ filterItem[0].title }} </div>
                 
             </div>            
         </div>    
