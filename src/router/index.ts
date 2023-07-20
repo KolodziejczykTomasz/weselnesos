@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ChurchSecondReadingDetails from '../views/ChurchSecondReadingDetails.vue'
+import ChurchFirstReadingDetails from '../views/ChurchFirstReadingDetails.vue'
+import ChurchPsalmsDetails from '../views/ChurchPsalmsDetails.vue'
+import ChurchGospelsDetails from '../views/ChurchGospelsDetails.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +17,24 @@ const router = createRouter({
       name: 'secondReading-details',
       props: true,
       component: ChurchSecondReadingDetails,
+    },
+    {
+      path: '/church/firstReading/:id',
+      name: 'firstReading-details',
+      props: true,
+      component: ChurchFirstReadingDetails,
+    },
+    {
+      path: '/church/gospels/:id',
+      name: 'gospels-details',
+      props: true,
+      component: ChurchGospelsDetails,
+    },
+    {
+      path: '/church/psalms/:id',
+      name: 'psalms-details',
+      props: true,
+      component: ChurchPsalmsDetails,
     },
     { path: '/church/psalms', name: 'ChurchPsalmsView', component: () => import('@/views/ChurchPsalmsView.vue'),},
     { path: '/church/gospels', name: 'ChurchGospelsView', component: () => import('@/views/ChurchGospelsView.vue'),},

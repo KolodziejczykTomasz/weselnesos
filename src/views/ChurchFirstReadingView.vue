@@ -1,29 +1,43 @@
 <script setup lang = "ts">
 import firstReading from "@/data/firstReading.js";
-const items: object | any = firstReading
+
+
+defineProps({
+  item: {
+    type: Object,
+    required: true,
+  },
+  items: {
+    type: Object,    
+  },
+  id: {
+    type: String,   
+  },
+  slug: {
+    type: String,   
+  },
+});
+
+const items = firstReading; 
 </script>
 
 <template>
-    <div class="church-section">
-        <div class="church-item" v-for="item in items" :key="item.id"> 
-            <div class="container">
-                <div class="title">
-                    {{ item.slug }}
-                </div>
-                <div class="subtitle">
-                    {{ item.title }}
-                </div>
-                <div class="content" style="white-space: pre-line;">
-                    {{ item.content }}                
-                </div>
-            </div>
-            
-        </div>    
+    <div class="section">       
+        <div class="item" v-for="item in items" :key="item.id" :item="item"> 
+                <RouterLink            
+                :to="{ name: 'firstReading-details', params: { id: item.id } }" >
+                <div class="container">
+                    <div class="title">
+                        {{ item.slug }}
+                    </div>               
+                </div> 
+            </RouterLink>              
+        </div>       
     </div>
 </template>
 
 <style scoped>
-.church-section {
+.section {
     display:flex;
     flex-flow: row wrap;
     flex-wrap: wrap;
@@ -34,51 +48,48 @@ const items: object | any = firstReading
     padding: 100px;
 }
 
+.item-link {
+  color: #b09aee;
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 1020px) {
-    .church-section {
+    .section {
         padding: 20px;
     }
 }
-.church-item {
-    display: flex;
-    flex-direction: column;
-    min-width: 250px;
+
+.section {
+    display:flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
     width: 100%;
-    min-height: 250px;
-    height: auto;
+    padding: 100px;
+    text-align: center;
+}
+.section a {
+    text-decoration: none;
+    color: #553898;
+}
+
+.item {
+    display: flex;
+    width: 250px;
+    height: 250px;
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    font-weight: bold;
     box-shadow: 0 0 2px #b09aee;
     margin:10px;
-    transition: .2s;
-    color: #8a8a8a;
-    text-align: left;
-    margin: 20px 0;
-    padding: 5px 0;
+    transition: .2s;  
 }
 
-.church-item {
-    width: 100%;
+.item:hover {
+    box-shadow: 0 0 4px #553898;
+    color:#2e170f;
 }
 
-.container{
-    padding: 0 20px;
-}
-
-.title {
-    font-size: 24px; 
-    padding: 20px 5px;
-    font-weight: 600;
-}
-
-.subtitle {
-    font-size: 22px; 
-    padding-bottom: 30px;
-}
-
-.content {
-   margin-bottom: 30px;
-}
 </style>
