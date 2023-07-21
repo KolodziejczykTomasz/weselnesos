@@ -79,7 +79,7 @@ const filterItem = data.filter((item: String | any) => item.id == idProps)
 
 .slug{
     padding: 20px 0; 
-    font-weight: 700;
+    font-weight: 600;
     font-size: 24px;
     color: #553898;
     font-style: italic;
