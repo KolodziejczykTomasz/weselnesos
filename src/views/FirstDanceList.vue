@@ -8,39 +8,49 @@ const items: Object | any = firstDanceMusic
         <div class="header">
             <div class="title"><p>Pierwszy taniec Pary Młodej</p></div>
             <div class="slug">
-            
+                <p>Pierwszy taniec Pary Młodej jest dla gości przepiękną i wzruszającą atrakcją, natomiast dla Nowożeńców to sprawdzian wielogodzinnych prób na parkiecie pod okiem choreografa.</p>
             </div>
         </div>
         <div class="postPhoto" >
             <img src="../assets/images/dance.jpg" alt="zdjęcie pierwszego tańca pary młodej" />
         </div>
-        <div class="content">
-           __________
+        <div class="content">          
+
+            <p>Jaką muzykę wybrać? - to zależy od umiejętności tanecznych. Pamiętajmy aby nie podnieść za wysoko sobie poprzeczki, bo to w połączeniu ze stresem na sali weselnej może przynieść odwrotny skutek. </p>
+            
+            <p>Jak w życiu tak i na pakiecie najważniejszy jest ten pierwszy raz. Nawet jak nie uda się rozpocząć zgodnie, z tym co było na próbach nie rozpoczynamy tańca od nowa, bo goście i tak nie zauważą nie planowanych kroków. </p>
+             
+            <p>A co zrobić aby wyglądało tak jak teledyskach?? Tutaj z pomocą przychodzą Szkoły Taneczne stacjonarne a nawet kursy online. Wybór zależy od Was i od dostępności wolnego czasu na próby. </p> 
+            
+            <p>Przygotowaliśmy małe ułatwienie i sporządziliśmy listę najczęściej wybieranych utworów przez Pary Młode. Umieściliśmy również odnośnik, aby można było odsłuchać wybraną piosenkę.  </p>           
     
         </div>
         <div class="footer">
             <div class="categoryName"></div>
         </div>
+        <div class="wrapperArray">
+            <p class="title">Muzyka najczęściej podczas pierwszego tańca Pary Młodej</p>
+            <SlotCardList v-for="item in items" :key="item.id">
+                <div class="array">
+                    <div class="itemId">{{item.id}}</div>
+                    <div class="itemBand">{{item.band}}</div>
+                    <div class="itemTitle">{{item.title}}</div>
+                    <div class="itemUrl" v-show="item.url">                    
+                        <a :href="item.url" target="_blank"><i class="bi bi-volume-up-fill"></i></a>
+                    </div>
+                </div>                    
+            </SlotCardList>
 
-
-
-
- <div class="wrapperArray">
-        <p class="title">Muzyka najczęściej podczas pierwszego tańca Pary Młodej</p>
-        <SlotCardList v-for="item in items" :key="item.id">
-            <div class="array">
-                <div class="itemId">{{item.id}}</div>
-                <div class="itemBand">{{item.band}}</div>
-                <div class="itemTitle">{{item.title}}</div>
-                <div class="itemUrl">                    
-                    <a :href="item.url" target="_blank"><i class="bi bi-volume-up-fill"></i></a>
-                </div>
-                </div>
-            
-        </SlotCardList></div>
+            <p class="alert">Zamieszczone linki do stron z utworami mają charakter wyłącznie poglądowy. Należy pamiętać, że wszelkie prawa do utworów należą do autorów tekstu.</p>
+        </div>
     </div>
 </template>
 <style scoped>
+
+.alert {
+    padding: 50px 0;
+    font-size: 18px;
+}
 .container {
     padding: 30px 0 70px 0;
 }

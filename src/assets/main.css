@@ -7,3 +7,12 @@
     height: 100vh;   
     -moz-osx-font-smoothing: grayscale;
 }
+
+.alert {
+    padding: 50px 0;
+    font-size: 16px;
+}
+
+.slug p {
+    font-weight: 600;
+}

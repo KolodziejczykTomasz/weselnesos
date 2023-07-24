@@ -252,14 +252,14 @@
 },
 {
     id:40,
-    title: "LOVER",
+    title: "Lover",
     band: "Taylor Swift",
     url: "https://www.youtube.com/watch?v=dIUkyatLWME&t=0s", 
     rok: ""   
 },
 {
     id:41,
-    title: "NEVER ENOUGH",
+    title: "Never enough",
     band: "The Greatest Showman",
     url: "https://www.youtube.com/watch?v=DlOHWyTMRko&t=0s", 
     rok: ""   
@@ -267,20 +267,20 @@
 {
     id:42,
     title: "Dancing in the Moonlight",
-    band: "TOPLOADER",
+    band: "Toploader",
     url: "https://www.youtube.com/watch?v=JPXehbKMpc8&t=0s", 
     rok: ""   
 },
 {
     id:43,
-    title: "YOU ARE THE REASON",
+    title: "You are the reason",
     band: "Calum Scott",
     url: "https://www.youtube.com/watch?v=V45UIQzQ0Fg&t=0s", 
     rok: ""   
 },
 {
     id:44,
-    title: "TIME OF MY LIFE",
+    title: "Time of my life",
     band: "Dirty Dancing",
     url: "https://www.youtube.com/watch?v=jQPqC91Tf0M&t=0s", 
     rok: ""   
@@ -322,7 +322,7 @@
 },
 {
     id:50,
-    title: "TO CO MASZ TY!",
+    title: "To co masz Ty!",
     band: "Dawid Podsiadło",
     url: "https://www.youtube.com/watch?v=zYm9KJrZT38", 
     rok: ""   
@@ -349,14 +349,14 @@
     rok: ""   
 },
 {
-    id:53,
+    id:54,
     title: "Lubię wracać tam gdzie byłem",
     band: "Zbigniew Wodecki",
     url: "https://www.youtube.com/watch?v=7Rx9gtWgn_w", 
     rok: ""   
 },
 {
-    id:53,
+    id:55,
     title: "Ten Stan",
     band: "Sanah",
     url: "https://www.youtube.com/watch?v=KYMGNHGfqrI", 
