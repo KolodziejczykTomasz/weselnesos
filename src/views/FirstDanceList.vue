@@ -16,13 +16,9 @@ const items: Object | any = firstDanceMusic
         </div>
         <div class="content">          
 
-            <p>Jaką muzykę wybrać? - to zależy od umiejętności tanecznych. Pamiętajmy aby nie podnieść za wysoko sobie poprzeczki, bo to w połączeniu ze stresem na sali weselnej może przynieść odwrotny skutek. </p>
-            
-            <p>Jak w życiu tak i na pakiecie najważniejszy jest ten pierwszy raz. Nawet jak nie uda się rozpocząć zgodnie, z tym co było na próbach nie rozpoczynamy tańca od nowa, bo goście i tak nie zauważą nie planowanych kroków. </p>
+            <p>Jaką muzykę wybrać? - to zależy od umiejętności tanecznych. Pamiętajmy aby nie podnieść za wysoko sobie poprzeczki, bo to w połączeniu ze stresem na sali weselnej może przynieść odwrotny skutek. Jak w życiu tak i na pakiecie najważniejszy jest ten pierwszy raz. Nawet jak nie uda się rozpocząć zgodnie, z tym co było na próbach nie rozpoczynamy tańca od nowa, bo goście i tak nie zauważą nie planowanych kroków. </p>
              
-            <p>A co zrobić aby wyglądało tak jak teledyskach?? Tutaj z pomocą przychodzą Szkoły Taneczne stacjonarne a nawet kursy online. Wybór zależy od Was i od dostępności wolnego czasu na próby. </p> 
-            
-            <p>Przygotowaliśmy małe ułatwienie i sporządziliśmy listę najczęściej wybieranych utworów przez Pary Młode. Umieściliśmy również odnośnik, aby można było odsłuchać wybraną piosenkę.  </p>           
+            <p>A co zrobić aby wyglądało tak jak teledyskach?? Tutaj z pomocą przychodzą Szkoły Taneczne stacjonarne a nawet kursy online. Wybór zależy od Was i od dostępności wolnego czasu na próby. Przygotowaliśmy małe ułatwienie i sporządziliśmy listę najczęściej wybieranych utworów przez Pary Młode. Umieściliśmy również odnośnik, aby można było odsłuchać wybraną piosenkę.  </p>           
     
         </div>
         <div class="footer">

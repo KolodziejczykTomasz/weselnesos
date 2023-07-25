@@ -87,14 +87,15 @@ const filterItem = data.filter((item: String | any) => item.id == idProps)
 
 .title {
     font-size: 18px; 
-    padding: 5px 0;
-    
+    padding: 20px 5px;
+    font-weight: 600;
 }
 
 .subtitle {
     font-size: 22px; 
     padding: 30px 0;
-
 }
-
+.content {
+    margin-bottom: 10px;
+}
 </style>

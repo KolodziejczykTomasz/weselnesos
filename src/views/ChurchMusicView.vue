@@ -17,8 +17,7 @@
     <div class="content"> </div>
     <div class="footer">
         <div class="categoryName">
-            <p>Wybór oczywiście jest duży i tu z pomocą przychodzi serwis Youtube, na którym można zobaczyć ale, przede wszystkim posłuchać wykonania danego utworu.</p>
-            <p>Oczywiście my dla Was przygotowaliśmy zestawienie utworów  najczęściej wybieranych przez Nowożeńców.</p>
+            <p>Wybór oczywiście jest duży i tu z pomocą przychodzi serwis Youtube, na którym można zobaczyć ale, przede wszystkim posłuchać wykonania danego utworu. Oczywiście my dla Was przygotowaliśmy zestawienie utworów  najczęściej wybieranych przez Nowożeńców.</p>
         </div>
     </div>
     <div class="wrapperArray">

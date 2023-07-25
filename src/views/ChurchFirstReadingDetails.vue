@@ -16,23 +16,18 @@ const idProps = reactive(props.id);
 let items = firstReading;
 let data:any = items;
 const filterItem = data.filter((item: String | any) => item.id == idProps)
-
 </script>
-
-
 <template>
     <div class="section">
         <div class="item"> 
             <div class="container"  >
-                <div>{{ filterItem[0].slug }} </div>
-                <div>{{ filterItem[0].content }} </div>
-                <div>{{ filterItem[0].title }} </div>
-                
+                <div class="slug">{{ filterItem[0].slug }} </div>
+                <div class="content">{{ filterItem[0].content }} </div>
+                <div class="title">{{ filterItem[0].title }} </div>                
             </div>            
         </div>    
     </div>
 </template>
-
 <style scoped>
 .section {
     display:flex;
@@ -48,6 +43,14 @@ const filterItem = data.filter((item: String | any) => item.id == idProps)
     .section {
         padding: 20px;
     }
+}
+
+.slug{
+    padding: 20px 0; 
+    font-weight: 600;
+    font-size: 24px;
+    color: #553898;
+    font-style: italic;
 }
 
 .item {
@@ -78,7 +81,7 @@ const filterItem = data.filter((item: String | any) => item.id == idProps)
 }
 
 .title {
-    font-size: 24px; 
+    font-size: 18px; 
     padding: 20px 5px;
     font-weight: 600;
 }
@@ -89,6 +92,7 @@ const filterItem = data.filter((item: String | any) => item.id == idProps)
 }
 
 .content {
-   margin-bottom: 30px;
+   margin-bottom: 10px;
+
 }
 </style>
