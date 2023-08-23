@@ -1,10 +1,19 @@
+<script setup lang="ts">
+  
+</script>
 <template>
-  <div class="section">
-      <router-link to="/church"><div class="item">Uroczystość</div></router-link>
-      <router-link to="/firstdance"><div class="item">Pierwszy taniec</div></router-link>
+  <div class="wrapper">
+    <div class="section">
+        <router-link to="/church"><div class="item">Uroczystość</div></router-link>
+        <router-link to="/firstdance"><div class="item">Pierwszy taniec</div></router-link>        
+    </div>    
   </div>
 </template>
 <style scoped>
+
+.wrapper {
+  position: relative;
+}
 .section {
   display:flex;
   flex-flow: row wrap;
@@ -36,6 +45,5 @@
   box-shadow: 0 0 4px #553898;
   color:#2e170f;
 }
-
 
 </style>

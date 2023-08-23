@@ -17,7 +17,7 @@
 <style scoped>
 .navigation-wrapper {
   width: 100%;
-  height: 100%;
+  height: 100%;  
 }
 
 
@@ -46,6 +46,7 @@ nav ul li {
   border-radius: 20px;
   width: 150px;
   font-size: 18px;
+  margin-bottom: 30px;
   
 }
 
